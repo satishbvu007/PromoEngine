@@ -19,7 +19,7 @@ namespace PromoEngine.Test
         [TestCase("ScenarioA", 100)]
         [TestCase("ScenarioB", 370)]
         [TestCase("ScenarioC", 280)]
-        public void AddMethodTest(string _scenario, int expected)
+        public void Add_GetTotalPrice_Scenarios_Returns(string _scenario, int expected)
         {
             double result = promoObj.GetTotalPrice(GetProducts(_scenario));
             Assert.AreEqual(expected, result);
