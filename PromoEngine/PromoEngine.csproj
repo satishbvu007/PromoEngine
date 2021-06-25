@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="PromoEngine.BL\PromoEngineLogic.cs" />
+    <Compile Include="PromoEngine.Factory\PromoEngineFactory.cs" />
+    <Compile Include="PromoEngine.Interfaces\IPromoEngineLogic.cs" />
+    <Compile Include="PromoEngine.Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
