@@ -65,43 +65,5 @@ namespace PromoEngine.Test
             }
             return products;
         }
-        //private List<Product> GetProducts(string _scenario)
-        //{
-        //    List<Product> products = new List<Product>();
-        //    if (_scenario == "ScenarioA")
-        //    {
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("C"));
-        //    }
-        //    if (_scenario == "ScenarioB")
-        //    {
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("C"));
-        //    }
-        //    if (_scenario == "ScenarioC")
-        //    {
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("A"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("B"));
-        //        products.Add(new Product("C"));
-        //        products.Add(new Product("D"));
-        //    }
-        //    return products;
-        //}
     }
 }
