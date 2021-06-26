@@ -1,4 +1,5 @@
-﻿using PromoEngine.PromoEngine.Interfaces;
+﻿using PromoEngine.PromoEngine.DL;
+using PromoEngine.PromoEngine.Interfaces;
 using PromoEngine.PromoEngine.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,12 @@ namespace PromoEngine.PromoEngine.BL
 {
     public class PromoEngineLogic : IPromoEngineLogic
     {
-        public double GetTotalPrice(List<Product> products)
+        private IProductRepository productRepo = null;
+        public PromoEngineLogic()
+        {
+            productRepo = new ProductRepository();
+        }
+        public double GetTotalProductsPrice(List<Product> products)
         {
             try
             {
@@ -126,6 +132,11 @@ namespace PromoEngine.PromoEngine.BL
             }
 
             return totalPriceofA;
+        }
+
+        public Product GetProductById(string id)
+        {
+           return productRepo.GetProductDetailsById(id);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace PromoEngine
         {
             try
             {
+                PromoEngineFactory factoryObj = new PromoEngineFactory();
                 List<Product> products = new List<Product>();
                 Console.WriteLine("total number of order");
                 int a = Convert.ToInt32(Console.ReadLine());
@@ -18,11 +19,11 @@ namespace PromoEngine
                 {
                     Console.WriteLine("enter the type of product:A,B,C or D");
                     string type = Console.ReadLine();
-                    Product p = new Product(type);
+                    Product p = factoryObj.GetInstance().GetProductById(type);
                     products.Add(p);
                 }
-                PromoEngineFactory factoryObj = new PromoEngineFactory();
-                double totalPrice = factoryObj.GetInstance().GetTotalPrice(products);
+               
+                double totalPrice = factoryObj.GetInstance().GetTotalProductsPrice(products);
                 Console.WriteLine(totalPrice);
                 Console.ReadLine();
             }

@@ -6,6 +6,7 @@ namespace PromoEngine.PromoEngine.Interfaces
 {
    public interface IPromoEngineLogic
     {
-        double GetTotalPrice(List<Product> products);
+        double GetTotalProductsPrice(List<Product> products);
+        Product GetProductById(string id);
     }
 }

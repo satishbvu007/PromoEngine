@@ -7,32 +7,5 @@ namespace PromoEngine.PromoEngine.Models
 
         public string Id { get; set; }
         public decimal Price { get; set; }
-
-
-        public Product(string id)
-        {
-            this.Id = id;
-            switch (id.ToUpper())
-            {
-                case "A":
-                    this.Price = 50m;
-
-                    break;
-                case "B":
-                    this.Price = 30m;
-
-                    break;
-                case "C":
-                    this.Price = 20m;
-
-                    break;
-                case "D":
-                    this.Price = 2015m;
-                    break;
-                default:
-                    throw new Exception("Invalid product selected");
-            }
-        }
-
     }
 }
