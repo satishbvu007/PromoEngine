@@ -19,7 +19,7 @@ namespace PromoEngine.PromoEngine.BL
             try
             {
                 int countofA = 0;
-                double priceofA = 50;
+                double priceofA = 50.5;
                 int countofB = 0;
                 double priceofB = 30;
                 int CountofC = 0;
